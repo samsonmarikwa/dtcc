@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: retailer
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: password
+  sql:
+    init:
+      mode: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true
+
