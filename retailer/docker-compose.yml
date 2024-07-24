@@ -1,0 +1,12 @@
+services:
+  retailer:
+    image: "samsonmarikwa/retailer:s1"
+    container_name: retailer-ms
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_APPLICATION_NAME: "retailer"
+
+networks:
+  retailer:
+    driver: "bridge"

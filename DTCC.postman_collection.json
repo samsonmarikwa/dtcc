@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "f9a7bf40-cd0d-479f-9976-1fcb0708f7e0",
+		"name": "DTCC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4512627"
+	},
+	"item": [
+		{
+			"name": "Get Points Earned",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/retailer/pointsearned/200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retailer",
+						"pointsearned",
+						"200"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerNotExists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/retailer/pointsearned/500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retailer",
+						"pointsearned",
+						"500"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NoPointEarned",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/retailer/pointsearned/400",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retailer",
+						"pointsearned",
+						"400"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
